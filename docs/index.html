@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Perguntas e Respostas - Futebol Brasileiro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Jogo de Perguntas e Respostas - Futebol Brasileiro</h1>
+  <div id="quiz-container">
+    <div id="question-container" class="text-center mb-4">
+      <h2 id="question-text"></h2>
+      <div id="options-container" class="btn-group btn-group-toggle" data-toggle="buttons"></div>
+      <button id="next-button" class="btn btn-primary mt-3" onclick="nextQuestion()">Próxima Pergunta</button>
+    </div>
+    <div id="result-container" class="text-center" style="display: none;">
+      <h2>Resultado</h2>
+      <p>Você acertou <span id="correct-answers">0</span> de <span id="total-questions">0</span> perguntas.</p>
+      <p>Sua porcentagem de acerto é: <span id="percentage">0</span>%</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
